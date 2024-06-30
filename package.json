@@ -4,7 +4,10 @@
   "description": "A lightweight rich-text editor that enables you to format text using Steam's [custom markup tags](https://steamcommunity.com/comment/Recommendation/formattinghelp), providing a live preview of the formatted content.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +16,10 @@
   "devDependencies": {
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
